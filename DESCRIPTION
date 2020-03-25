@@ -1,6 +1,6 @@
 Package: wafflehouseindex
 Type: Package
-Title: wafflehouseindex title goes here otherwise CRAN checks fail
+Title: Compute the Waffle House Index Value Based on Current Closed Location Data
 Version: 0.1.0
 Date: 2020-03-25
 Authors@R: c(
@@ -8,17 +8,22 @@ Authors@R: c(
            comment = c(ORCID = "0000-0001-5670-2640"))
   )
 Maintainer: Bob Rudis <bob@rud.is>
-Description: A good description goes here otherwise CRAN checks fail.
+Description: The Waffle House Index was one of a series of metrics used by a former FEMA directory to gauge
+    the severity of disasters. If a Waffle House closes, you know you're hosed. Tools are provided to retrieve
+    closure information and compute the Waffle House Index.
 URL: https://git.rud.is/hrbrmstr/wafflehouseindex
 BugReports: https://git.rud.is/hrbrmstr/wafflehouseindex/issues
 Encoding: UTF-8
-License: AGPL
+License: MIT + file LICENSE
 Suggests: 
     covr, tinytest
 Depends: 
     R (>= 3.2.0)
 Imports: 
     httr,
-    jsonlite
+    jsonlite,
+    magrittr,
+    geojsonsf,
+    sf
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.0.2

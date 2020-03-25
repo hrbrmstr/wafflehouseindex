@@ -4,9 +4,11 @@
 \name{wafflehouseindex}
 \alias{wafflehouseindex}
 \alias{wafflehouseindex-package}
-\title{...}
+\title{Compute the Waffle House Index Value Based on Current Closed Location Data}
 \description{
-A good description goes here otherwise CRAN checks fail.
+The Waffle House Index was one of a series of metrics used by a former FEMA directory to gauge
+the severity of disasters. If a Waffle House closes, you know you're hosed. Tools are provided to retrieve
+closure information and compute the Waffle House Index.
 }
 \seealso{
 Useful links:
