@@ -1,7 +1,7 @@
 #' Retrieve main list of WH locations
 #'
 #' @export
-wfi_loc_list <- function() {
+whi_loc_list <- function() {
 
   httr::GET(
     url = "https://locations.wafflehouse.com",

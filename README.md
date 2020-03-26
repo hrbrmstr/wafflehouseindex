@@ -28,24 +28,16 @@ information and compute the Waffle House Index.
 
 The following functions are implemented:
 
-  - `wfi_loc_list`: Retrieve main list of WH locations
   - `whi_compute`: Compute the Waffle House Index from list of
     open/closed stores
   - `whi_get_loc_info`: Retrieve the current info on all Waffle House
     locations
+  - `whi_loc_list`: Retrieve main list of WH locations
 
 ## Installation
 
 ``` r
-remotes::install_git("https://git.rud.is/hrbrmstr/wafflehouseindex.git")
-# or
-remotes::install_git("https://git.sr.ht/~hrbrmstr/wafflehouseindex")
-# or
 remotes::install_gitlab("hrbrmstr/wafflehouseindex")
-# or
-remotes::install_bitbucket("hrbrmstr/wafflehouseindex")
-# or
-remotes::install_github("hrbrmstr/wafflehouseindex")
 ```
 
 NOTE: To use the ‘remotes’ install options you will need to have the
@@ -65,8 +57,8 @@ packageVersion("wafflehouseindex")
 
 | Lang | \# Files |  (%) | LoC | (%) | Blank lines | (%) | \# Lines |  (%) |
 | :--- | -------: | ---: | --: | --: | ----------: | --: | -------: | ---: |
-| R    |        7 | 0.88 |  73 | 0.9 |          35 | 0.7 |       39 | 0.58 |
-| Rmd  |        1 | 0.12 |   8 | 0.1 |          15 | 0.3 |       28 | 0.42 |
+| R    |        7 | 0.88 |  73 | 0.9 |          35 | 0.7 |       40 | 0.59 |
+| Rmd  |        1 | 0.12 |   8 | 0.1 |          15 | 0.3 |       28 | 0.41 |
 
 ## Code of Conduct
 
