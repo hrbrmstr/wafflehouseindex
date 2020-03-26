@@ -1,8 +1,8 @@
-.whi_get_loc_info <- function(crawl_delay = 5) {
+.whi_get_loc_info <- function(batch_size = 10, crawl_delay = 5) {
 
   wfi_locs <- whi_loc_list()
 
-  batches <- sapply(split(wfi_locs$id, ceiling(seq_along(wfi_locs$id)/50)), paste0, collapse = ",")
+  batches <- sapply(split(wfi_locs$id, ceiling(seq_along(wfi_locs$id)/batch_size)), paste0, collapse = ",")
 
   lapply(batches, function(.x) {
 
@@ -72,7 +72,8 @@
 
 #' Retrieve the current info on all Waffle House locations
 #'
-#' @note this function is memoised since you're hitting a hidden API a few dozen times.
+#' @note this function is memoised since you're hitting a hidden API many times.
+#' @param batch_size how many location ids to use in each call (defaults to 10)
 #' @param crawl_delay how long to wait between hidden API hits (default 5s)
 #' @export
 whi_get_loc_info <- memoise::memoise(.whi_get_loc_info)

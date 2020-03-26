@@ -1,7 +1,7 @@
 Package: wafflehouseindex
 Type: Package
 Title: Compute the Waffle House Index Value Based on Current Closed Location Data
-Version: 0.1.0
+Version: 0.2.0
 Date: 2020-03-25
 Authors@R: c(
     person("Bob", "Rudis", email = "bob@rud.is", role = c("aut", "cre"), 

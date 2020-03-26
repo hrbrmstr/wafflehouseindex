@@ -4,14 +4,16 @@
 \alias{whi_get_loc_info}
 \title{Retrieve the current info on all Waffle House locations}
 \usage{
-whi_get_loc_info(crawl_delay = 5)
+whi_get_loc_info(batch_size = 10, crawl_delay = 5)
 }
 \arguments{
+\item{batch_size}{how many location ids to use in each call (defaults to 10)}
+
 \item{crawl_delay}{how long to wait between hidden API hits (default 5s)}
 }
 \description{
 Retrieve the current info on all Waffle House locations
 }
 \note{
-this function is memoised since you're hitting a hidden API a few dozen times.
+this function is memoised since you're hitting a hidden API many times.
 }

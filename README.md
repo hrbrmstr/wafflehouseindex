@@ -38,6 +38,8 @@ The following functions are implemented:
 
 ``` r
 remotes::install_gitlab("hrbrmstr/wafflehouseindex")
+# or
+remotes::install_github("hrbrmstr/wafflehouseindex")
 ```
 
 NOTE: To use the ‘remotes’ install options you will need to have the
@@ -50,14 +52,14 @@ library(wafflehouseindex)
 
 # current version
 packageVersion("wafflehouseindex")
-## [1] '0.1.0'
+## [1] '0.2.0'
 ```
 
 ## wafflehouseindex Metrics
 
 | Lang | \# Files |  (%) | LoC | (%) | Blank lines | (%) | \# Lines |  (%) |
 | :--- | -------: | ---: | --: | --: | ----------: | --: | -------: | ---: |
-| R    |        7 | 0.88 |  73 | 0.9 |          35 | 0.7 |       40 | 0.59 |
+| R    |        7 | 0.88 |  73 | 0.9 |          35 | 0.7 |       41 | 0.59 |
 | Rmd  |        1 | 0.12 |   8 | 0.1 |          15 | 0.3 |       28 | 0.41 |
 
 ## Code of Conduct
